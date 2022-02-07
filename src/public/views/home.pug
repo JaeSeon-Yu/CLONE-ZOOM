@@ -5,6 +5,16 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Noom
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
     body 
-        h1 It work!
+        header 
+            h1 It work!
+        main 
+            form#nickname
+                input(type="text" placeholder="닉네임을 입력해주세요." required)
+                button 확인
+            ul
+            form#message
+                input(type="text", placeholder="메시지를 작성해주세요.", required)
+                button 전송
         script(src="/public/js/app.js") 
